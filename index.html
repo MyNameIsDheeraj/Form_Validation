@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <h1>Register</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your Name" maxlength="25" autocomplete="off" >
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="sample@example.com" maxlength="30" autocomplete="off"> 
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="number">Mobile Number</label>
+                <input type="text" id="number" name="number" maxlength="13" placeholder="Enter your Number" autocomplete="off">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" oninput="validatePasswordStrength(this.value)" maxlength="16" minlength="8" placeholder="Enter Password"  autocomplete="off">
+                <div class="error"></div>
+                <div class="strength"></div>
+            </div>
+            <div class="input-group">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword" maxlength="16" minlength="8" placeholder="Renter Password" autocomplete="off">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob"  placeholder="DD/MM/YYYY" maxlength="0" autocomplete="off">
+                <div class="error"></div>
+            </div>
+            <div class="error" id="error-message"></div>
+            <button type="submit" id="submitButton" >submit</button>
+        </form>
+        <form action="" method="" target=""></form>
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
